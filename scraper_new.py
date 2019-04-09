@@ -164,6 +164,7 @@ def get_attrib(html, source):
         convo = ''
         for i in x5:
             convo += '/n' + i.text
+        convo = convo.strip()
         # convo = x5[0].text
     except:
         convo = ''
