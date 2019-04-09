@@ -161,7 +161,10 @@ def get_attrib(html, source):
 
     x5 = page_html.find_all('p')
     try:
-        convo = x5[0].text
+        convo = ''
+        for i in x5:
+            convo += '/n' + i.text
+        # convo = x5[0].text
     except:
         convo = ''
 
