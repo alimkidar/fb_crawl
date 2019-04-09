@@ -6,8 +6,7 @@ chromedriver_linux64/
 result.csv
 results/
 sample_fb.csv
-scrape.py
-scraper_new.py
+scraper.py
 selenium+bs4.ipynb
 test_fungsi.ipynb
 test_selenium_fb.ipynb
