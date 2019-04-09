@@ -1,0 +1,14 @@
+.ipynb_checkpoints/
+Untitled.ipynb
+__pycache__/
+chromedriver_linux64.zip
+chromedriver_linux64/
+result.csv
+results/
+sample_fb.csv
+scrape.py
+scraper_new.py
+selenium+bs4.ipynb
+test_fungsi.ipynb
+test_selenium_fb.ipynb
+text.html
