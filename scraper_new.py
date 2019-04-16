@@ -183,6 +183,9 @@ def get_attrib(html, source):
         comment_count = x7[0].text.split()[0]
     except:
         comment_count = ''
+    x_foto = page_soup.findAll('a',rel='theater')
+
+    foto_count = str(len(x))
 
     username = get_username(prof_link)
     bucket.append({
@@ -196,6 +199,7 @@ def get_attrib(html, source):
         'convo': convo,
         'likes_count': str(like_count),
         'comments_count': str(comment_count),
+        'photos_count': foto_count,
         'source': source    
     })
     return bucket

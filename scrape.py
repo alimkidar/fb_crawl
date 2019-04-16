@@ -26,7 +26,7 @@ def main():
             data += generate_data(page) 
             print('Ok.')
     df = pd.DataFrame(data)
-    columns = ['name', 'username', 'bedge', 'prof_link', 'time(gmt+7)', 'timestamp', 'post_utl', 'convo', 'likes_count', 'comments_count', 'source']
+    columns = ['name', 'username', 'bedge', 'prof_link', 'time(gmt+7)', 'timestamp', 'post_utl', 'convo', 'likes_count', 'comments_count','photos_count', 'source']
     df = df[columns]
     df.to_csv('result.csv')
     print('Done!')
