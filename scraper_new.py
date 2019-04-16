@@ -183,7 +183,7 @@ def get_attrib(html, source):
         comment_count = x7[0].text.split()[0]
     except:
         comment_count = ''
-    x_foto = page_soup.findAll('a',rel='theater')
+    x_foto = page_html.findAll('a',rel='theater')
 
     foto_count = str(len(x))
 
