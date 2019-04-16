@@ -185,7 +185,7 @@ def get_attrib(html, source):
         comment_count = ''
     x_foto = page_html.findAll('a',rel='theater')
 
-    foto_count = str(len(x))
+    foto_count = str(len(x_foto))
 
     username = get_username(prof_link)
     bucket.append({
