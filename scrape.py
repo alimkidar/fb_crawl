@@ -24,13 +24,15 @@ def main():
             scroll(scrl)
             open_seemore()
             data += generate_data(page) 
+            save_df(data)
             print('Ok.')
+    save_df(data)
+    print('Done!')
+def save_df(data):
     df = pd.DataFrame(data)
     columns = ['name', 'username', 'bedge', 'prof_link', 'time(gmt+7)', 'timestamp', 'post_utl', 'convo', 'likes_count', 'comments_count','photos_count', 'source']
     df = df[columns]
     df.to_csv('result.csv')
-    print('Done!')
-
 def get_input(file):
     f = open(file, 'r', newline='\n')
     text = f.read()
