@@ -16,10 +16,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from datetime import datetime
 
 def ts2dt_jakarta(ts):
-    ts = int(ts)
-    offset = 3600 * 7
-    ts = ts + offset
-    return datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+    try:
+        ts = int(ts)
+        offset = 3600 * 7
+        ts = ts + offset
+        return datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+    except:
+        return '-'
 def load_fb():
     global driver
 
